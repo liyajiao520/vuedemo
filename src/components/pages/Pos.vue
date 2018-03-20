@@ -23,36 +23,8 @@
             </div>
           </el-tab-pane>
           <el-tab-pane label="挂单" name="second">
-            <el-table :data="tableData" border  style="width: 100%">
-              <el-table-column prop="goodsName" label="商品名称" id="center"></el-table-column>
-              <el-table-column prop="count" label="量" width="50"></el-table-column>
-              <el-table-column prop="price" label="金额" width="70"></el-table-column>
-              <el-table-column  label="操作" width="100" fixed="right">
-                <template slot-scope="scope">
-                  <el-button size="small"  type='text' @click="handleAdd(scope.$index, scope.row)">增加</el-button>
-                  <el-button size="small"  type='text' @click="handleDelete(scope.$index, scope.row)">删除</el-button>
-                </template>
-              </el-table-column>
-            </el-table>
-            <div>总价:{{totalprice}}</div>
-            <el-col :span="8"><el-button type="success" @click="Delete">删除</el-button></el-col>
-            <el-col :span="8"><el-button type="warning" @click="Checkout">结账</el-button> </el-col>
           </el-tab-pane>
           <el-tab-pane label="外卖" name="third">
-            <el-table :data="tableData" border  style="width: 100%">
-              <el-table-column prop="goodsName" label="商品名称" id="center"></el-table-column>
-              <el-table-column prop="count" label="量" width="50"></el-table-column>
-              <el-table-column prop="price" label="金额" width="70"></el-table-column>
-              <el-table-column  label="操作" width="100" fixed="right">
-                <template slot-scope="scope">
-                  <el-button size="small"  type='text' @click="handleAdd(scope.$index, scope.row)">增加</el-button>
-                  <el-button size="small"  type='text' @click="handleDelete(scope.$index, scope.row)">删除</el-button>
-                </template>
-              </el-table-column>
-            </el-table>
-            <div>总价:{{totalprice}}</div>
-            <el-col :span="8"><el-button type="success" @click="Delete">删除</el-button></el-col>
-            <el-col :span="8"><el-button type="warning" @click="Checkout">结账</el-button> </el-col>
           </el-tab-pane>
         </el-tabs>
       </el-col>
